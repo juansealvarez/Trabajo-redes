@@ -84,7 +84,7 @@ void BellmanFord(struct grafo* grafo, int origen)
 
  
         if (AlmacenarDist[u] + peso < AlmacenarDist[v])
-            printf("Este grafo tiene una arista con ciclo de peso negativo\n");
+            printf("Esta red tiene una arista con ciclo de peso negativo\n");
     }
  
     Solucion(AlmacenarDist, vertices);
@@ -96,13 +96,13 @@ int main()
 {
     int V,A,O;
  
-	printf("Ingrese el numero de vertices del grafo\n");
+	printf("Ingrese el numero de routers de la red\n");
     scanf("%d",&V);
  
-	printf("Ingrese el numero de aristas del grafo\n");
+	printf("Ingrese el numero de aristas de la red\n");
     scanf("%d",&A);
  
-	printf("Ingrese el numero del vertice de origen\n");
+	printf("Ingrese el numero del router de origen\n");
 	scanf("%d",&O);
  
     struct grafo* grafo = crearGrafo(V, A);
